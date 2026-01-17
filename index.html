@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhoomi Jayani | Embedded Systems Intern</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* ===== HEADER (NO ANIMATION) ===== */
+header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #38bdf8;
+}
+
+header p {
+    color: #cbd5f5;
+    margin-top: 6px;
+}
+
+/* ===== RESUME BUTTON ===== */
+.resume-btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #38bdf8;
+    color: #020617;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: #0ea5e9;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 40px;
+}
+
+section h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background-color: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(56,189,248,0.1);
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: #020617;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1e293b;
+    color: #94a3b8;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .profile-pic {
+        width: 110px;
+        height: 110px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER ALWAYS VISIBLE -->
+<header>
+    <img src="profile.jpg" class="profile-pic" alt="Bhoomi Jayani">
+    <div>
+        <h1>Bhoomi Jayani</h1>
+        <p>ECE Student | Embedded Systems Intern</p>
+        <p>Bonrix Embedded Innovations / Bonrix Software Systems</p>
+
+        <a href="Bhoomijayani_ECE_Intern.pdf" download>
+            <button class="resume-btn">Download Resume</button>
+        </a>
+
+        
+    </div>
+</header>
+
+<section class="fade-up">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            Electronics and Communication Engineering undergraduate from
+            Government Engineering College Bhavnagar (GTU).
+            Passionate about embedded systems with hands-on Arduino projects
+            and real industry internship exposure.
+        </p>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>B.E. Electronics & Communication Engineering</strong></p>
+        <p>GEC Bhavnagar (GTU) | CGPA: 6.76 | 2026</p>
+    </div>
+    <div class="card">
+        <p><strong>HSC</strong> – Aspire Public School, Surat (70.30%)</p>
+        <p><strong>SSC</strong> – Shree Gayatri Vidhyalay, Amreli (69.50%)</p>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Internship</h2>
+    <div class="card">
+        <p><strong>Embedded Systems Intern</strong></p>
+        <p>Bonrix Embedded Innovations / Bonrix Software Systems</p>
+        <ul>
+            <li>Arduino Uno programming and hardware interfacing</li>
+            <li>Digital I/O, sensor debugging</li>
+            <li>Industry-level embedded workflow</li>
+            <li>Structured testing practices</li>
+        </ul>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill-btn">Arduino Uno</div>
+        <div class="skill-btn">Embedded Systems</div>
+        <div class="skill-btn">Digital I/O</div>
+        <div class="skill-btn">IR Sensors</div>
+        <div class="skill-btn">Bluetooth HC-05</div>
+        <div class="skill-btn">PCB Basics</div>
+        <div class="skill-btn">EasyEDA</div>
+        <div class="skill-btn">Arduino IDE</div>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Projects</h2>
+    <div class="card">
+        <strong>Smart Car Parking System</strong>
+        <p>Arduino-based automated parking using IR sensors and LCD.</p>
+    </div>
+    <div class="card">
+        <strong>Home Automation System</strong>
+        <p>Bluetooth-controlled home automation using Arduino Uno.</p>
+    </div>
+</section>
+
+<section class="fade-up">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>📞 +91 8320712612</p>
+        <p>✉️ <a href="mailto:bhoomijiyani43@gmail.com">bhoomijiyani43@gmail.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/bhoomi-jyani-3a8a96267" target="_blank">LinkedIn</a></p>
+        <p>💻 <a href="https://www.github.com/bhoomijayani" target="_blank">GitHub</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Bhoomi Jayani | Embedded Systems Portfolio
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade-up');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < window.innerHeight - 80) {
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
